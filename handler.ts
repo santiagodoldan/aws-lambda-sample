@@ -1,4 +1,6 @@
-export function fetchTweets(event, context, callback) {
+import { APIGatewayEvent, Callback, Context } from "aws-lambda"
+
+export function fetchTweets(event: APIGatewayEvent, context: Context, callback: Callback) {
   const response = {
     statusCode: 200,
     body: JSON.stringify({
