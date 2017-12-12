@@ -1,0 +1,17 @@
+service: aws-lambda-sample
+
+provider:
+  name: aws
+  runtime: nodejs8.9.1
+
+plugins:
+  - serverless-webpack
+
+functions:
+  fetchTweets:
+    handler: handler.fetchTweets
+
+    events:
+     - http:
+         path: tweets
+         method: get

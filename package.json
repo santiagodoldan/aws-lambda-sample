@@ -1,0 +1,20 @@
+{
+  "name": "aws-lamba-sample",
+  "version": "1.0.0",
+  "description": "Sample usage of AWS lamba + SNS + SQS",
+  "main": "index.js",
+  "repository": "git@github.com:santiagodoldan/aws-lamba-sample.git",
+  "author": "Santiago Doldan <santiagodolte@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "serverless": "^1.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.58",
+    "serverless-webpack": "^4.1.0",
+    "ts-loader": "^3.2.0",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0"
+  }
+}
