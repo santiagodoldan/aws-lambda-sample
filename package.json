@@ -2,12 +2,18 @@
   "name": "aws-lamba-sample",
   "version": "1.0.0",
   "description": "Sample usage of AWS lamba + SNS + SQS",
-  "main": "index.js",
   "repository": "git@github.com:santiagodoldan/aws-lamba-sample.git",
   "author": "Santiago Doldan <santiagodolte@gmail.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "build": "serverless invoke local -f fetchTweets",
+    "deploy-production": "node bin/deploy.js",
+    "test": "echo \"I have no tests yet circle :)\" && exit 0"
+  },
   "dependencies": {
+    "adm-zip": "^0.4.7",
+    "aws-sdk": "^2.168.0",
     "serverless": "^1.24.1"
   },
   "devDependencies": {

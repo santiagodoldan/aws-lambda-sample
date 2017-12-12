@@ -2,7 +2,7 @@ service: aws-lambda-sample
 
 provider:
   name: aws
-  runtime: nodejs8.9.1
+  runtime: nodejs6.10
 
 plugins:
   - serverless-webpack

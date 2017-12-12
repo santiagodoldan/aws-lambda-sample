@@ -2,7 +2,7 @@ export function fetchTweets(event, context, callback) {
   const response = {
     statusCode: 200,
     body: JSON.stringify({
-      message: 'Go Serverless v1.0! Your function executed successfully!',
+      message: 'This is a lambda function updated via circleci',
       input: event,
     })
   }
